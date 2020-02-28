@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:context="http://www.springframework.org/schema/context"
+       xmlns:xsd="http://www.w3.org/2001/XMLSchema"
+       xmlns:p="http://www.springframework.org/schema/p"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xsi:schemaLocation="
+  		http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd
+  		http://www.springframework.org/schema/context http://www.springframework.org/schema/context/spring-context.xsd">
+
+
+    <bean id="userEnity" class="org.wenhao.v1.enity.UserEnity">
+        <constructor-arg index="0" value="id"/>
+        <constructor-arg index="1" value="name"/>
+        <property name="id" value="10"/>
+        <property name="name" value="wenhao"/>
+    </bean>
+</beans>
