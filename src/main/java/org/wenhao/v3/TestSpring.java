@@ -10,7 +10,8 @@ public class TestSpring {
 
     public static void main(String[] args) {
         context = new AnnotationConfigApplicationContext(MyConfig.class);
-        Win10Enity win10Enity = (Win10Enity) context.getBean("win10Enity");
+        //Win10Enity win10Enity = (Win10Enity) context.getBean("win10Enity"); 使用@bean注解时，采用该种方法
+        Win10Enity win10Enity = (Win10Enity) context.getBean("org.wenhao.v3.enity.Win10Enity"); //使用@import时采用的方法
         System.out.println(win10Enity);
     }
 }
